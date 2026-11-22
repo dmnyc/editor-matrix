@@ -56,6 +56,9 @@ Audited 2026-11-22 from the source of each app; a ? is checked before the first 
 | Categories suggested from `categories.json`: by season before typing, matches as you type | ✅ | ? | ❌ free text | ❌ free text |
 | Each category shown with its emoji | ✅ | ◐ 141 of 162 | ❌ | ❌ |
 | Your own category allowed beside the list | ✅ | ✅ | ✅ | ✅ |
+| A time that is only a number becomes minutes on leaving the box ("15" → "15 min"); "1 hr", "overnight" and servings are kept as typed | ✅ | ❌ | ? | ? |
+| The first photo drawn large as the cover, the rest below; any of them can be made the cover | ✅ | ✅ | ? | ? |
+| Videos (MP4) beside the photos | ❌ photos only | ✅ | ? | ? |
 | Chef's notes: formatted paste becomes markdown; a pasted heading becomes a bold line | ✅ | ? | ? | ? |
 | Chef's notes: Cmd+B, Cmd+I, Cmd+K; Enter continues a list or quote | ✅ | ? | — touch; ? keyboard | — touch; ? keyboard |
 | Plain paste (Cmd+Shift+V) | ✅ | ? | — | — |
