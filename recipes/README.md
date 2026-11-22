@@ -54,7 +54,7 @@ Audited 2026-11-22 from the source of each app; a ? is checked before the first 
 | Reorder list items by dragging | ◐ Move up only | ✅ | ❌ | ❌ |
 | A pasted list becomes items, bullets and numbers taken off ("1.5 tsp" and "350:" left alone) | ✅ | ? | ❌ | ❌ |
 | Categories suggested from `categories.json`: by season before typing, matches as you type | ✅ | ? | ❌ free text | ❌ free text |
-| Each category shown with its emoji | ✅ | ✅ | ❌ | ❌ |
+| Each category shown with its emoji | ✅ | ◐ 141 of 162 | ❌ | ❌ |
 | Your own category allowed beside the list | ✅ | ✅ | ✅ | ✅ |
 | Chef's notes: formatted paste becomes markdown; a pasted heading becomes a bold line | ✅ | ? | ? | ? |
 | Chef's notes: Cmd+B, Cmd+I, Cmd+K; Enter continues a list or quote | ✅ | ? | — touch; ? keyboard | — touch; ? keyboard |

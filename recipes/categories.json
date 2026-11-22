@@ -1,5 +1,5 @@
 {
- "about": "Zap Cooking's recipe categories, shared by every recipe composer (Sidecar, Zap Cooking web, iOS, Android). The name is what is published, as `zapcooking-<name lowercased, spaces to hyphens>`; the emoji is shown beside it and never published; names are shown translated where an app is translated, and filed in English. Source: zapcooking/frontend src/lib/consts.ts recipeTags at c288b87b. An emoji of null has none yet: one is chosen here, then every app takes it.",
+ "about": "Zap Cooking's recipe categories, shared by every recipe composer (Sidecar, Zap Cooking web, iOS, Android). The name is what is published, as `zapcooking-<name lowercased, spaces to hyphens>`; the emoji is shown beside it and never published; names are shown translated where an app is translated, and filed in English. Source: zapcooking/frontend src/lib/consts.ts recipeTags at c288b87b. Every category has an emoji; a new one gets its emoji here first, then every app takes it. The 21 that Zap Cooking's list had none for were chosen here on 2026-11-22.",
  "categories": [
   {
    "name": "Alcohol",
@@ -71,15 +71,15 @@
   },
   {
    "name": "Broccoli",
-   "emoji": null
+   "emoji": "🥦"
   },
   {
    "name": "Cabbage",
-   "emoji": null
+   "emoji": "🥬"
   },
   {
    "name": "Cajun",
-   "emoji": null
+   "emoji": "🌶️"
   },
   {
    "name": "Cake",
@@ -139,7 +139,7 @@
   },
   {
    "name": "Danish",
-   "emoji": null
+   "emoji": "🇩🇰"
   },
   {
    "name": "Dessert",
@@ -151,7 +151,7 @@
   },
   {
    "name": "Dressing",
-   "emoji": null
+   "emoji": "🫗"
   },
   {
    "name": "Drinks",
@@ -219,7 +219,7 @@
   },
   {
    "name": "Galician",
-   "emoji": null
+   "emoji": "🐚"
   },
   {
    "name": "Garlic",
@@ -263,7 +263,7 @@
   },
   {
    "name": "Jam",
-   "emoji": null
+   "emoji": "🍓"
   },
   {
    "name": "Japanese",
@@ -291,7 +291,7 @@
   },
   {
    "name": "Lentil",
-   "emoji": null
+   "emoji": "🫘"
   },
   {
    "name": "Liquor",
@@ -351,7 +351,7 @@
   },
   {
    "name": "Palestinian",
-   "emoji": null
+   "emoji": "🇵🇸"
   },
   {
    "name": "Pancake",
@@ -367,7 +367,7 @@
   },
   {
    "name": "Pate",
-   "emoji": null
+   "emoji": "🥖"
   },
   {
    "name": "Peppers",
@@ -407,7 +407,7 @@
   },
   {
    "name": "Pub",
-   "emoji": null
+   "emoji": "🍺"
   },
   {
    "name": "Quebec",
@@ -419,7 +419,7 @@
   },
   {
    "name": "Raw",
-   "emoji": null
+   "emoji": "🥕"
   },
   {
    "name": "Rice",
@@ -467,7 +467,7 @@
   },
   {
    "name": "Side",
-   "emoji": null
+   "emoji": "🍽️"
   },
   {
    "name": "Slowcooked",
@@ -495,11 +495,11 @@
   },
   {
    "name": "Southern",
-   "emoji": null
+   "emoji": "🫓"
   },
   {
    "name": "Southwest",
-   "emoji": null
+   "emoji": "🌵"
   },
   {
    "name": "Spanish",
@@ -519,11 +519,11 @@
   },
   {
    "name": "Spread",
-   "emoji": null
+   "emoji": "🧈"
   },
   {
    "name": "Squash",
-   "emoji": null
+   "emoji": "🎃"
   },
   {
    "name": "Steak",
@@ -579,11 +579,11 @@
   },
   {
    "name": "Traditional",
-   "emoji": null
+   "emoji": "📜"
   },
   {
    "name": "Traybake",
-   "emoji": null
+   "emoji": "🍰"
   },
   {
    "name": "Tuna",
@@ -623,7 +623,7 @@
   },
   {
    "name": "Raw Vegan",
-   "emoji": null
+   "emoji": "🌿"
   },
   {
    "name": "Vietnamese",
@@ -631,7 +631,7 @@
   },
   {
    "name": "Wholemeal",
-   "emoji": null
+   "emoji": "🌾"
   },
   {
    "name": "Wine",
