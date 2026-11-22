@@ -1,0 +1,3002 @@
+[
+ {
+  "id": "type-word",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ]
+  ],
+  "text": "hello‸"
+ },
+ {
+  "id": "lead-space",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    " "
+   ],
+   [
+    "type",
+    "hello"
+   ]
+  ],
+  "text": " hello‸"
+ },
+ {
+  "id": "lone-space",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    " "
+   ]
+  ],
+  "text": " ‸",
+  "empty": false
+ },
+ {
+  "id": "double-space",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "type",
+    " "
+   ],
+   [
+    "type",
+    " "
+   ],
+   [
+    "type",
+    "b"
+   ]
+  ],
+  "text": "a  b‸"
+ },
+ {
+  "id": "trail-spaces",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "hi"
+   ],
+   [
+    "type",
+    " "
+   ],
+   [
+    "type",
+    " "
+   ]
+  ],
+  "text": "hi  ‸"
+ },
+ {
+  "id": "enter-first",
+  "group": "whitespace",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "hi"
+   ]
+  ],
+  "text": "\nhi‸"
+ },
+ {
+  "id": "enter-mid",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "key",
+    "Enter"
+   ]
+  ],
+  "text": "a\n‸b"
+ },
+ {
+  "id": "enter-end",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ]
+  ],
+  "text": "ab\n‸"
+ },
+ {
+  "id": "enter-twice-end",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "c"
+   ]
+  ],
+  "text": "ab\n\nc‸"
+ },
+ {
+  "id": "shift-enter-mid",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "key",
+    "ShiftEnter"
+   ]
+  ],
+  "text": "a\n‸b"
+ },
+ {
+  "id": "shift-enter-end",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "ShiftEnter"
+   ],
+   [
+    "type",
+    "c"
+   ]
+  ],
+  "text": "ab\nc‸"
+ },
+ {
+  "id": "shift-enter-first",
+  "group": "whitespace",
+  "steps": [
+   [
+    "key",
+    "ShiftEnter"
+   ],
+   [
+    "type",
+    "hi"
+   ]
+  ],
+  "text": "\nhi‸"
+ },
+ {
+  "id": "paragraphs",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "one"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "two"
+   ]
+  ],
+  "text": "one\n\ntwo‸"
+ },
+ {
+  "id": "many-blank-lines",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "b"
+   ]
+  ],
+  "text": "a\n\n\n\nb‸"
+ },
+ {
+  "id": "only-spaces",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "   "
+   ]
+  ],
+  "text": "   ‸",
+  "empty": false
+ },
+ {
+  "id": "only-enters",
+  "group": "whitespace",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ]
+  ],
+  "text": "\n\n‸",
+  "empty": false
+ },
+ {
+  "id": "space-after-enter",
+  "group": "whitespace",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    " a"
+   ]
+  ],
+  "text": "\n a‸"
+ },
+ {
+  "id": "indent-line-two",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "  b"
+   ]
+  ],
+  "text": "a\n  b‸"
+ },
+ {
+  "id": "enter-space-bs-bs",
+  "group": "whitespace",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    " "
+   ],
+   [
+    "key",
+    "Backspace"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "blank-line-then-delete-it",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Backspace"
+   ],
+   [
+    "type",
+    "b"
+   ]
+  ],
+  "text": "a\nb‸"
+ },
+ {
+  "id": "type-over-all",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "type",
+    "x"
+   ]
+  ],
+  "text": "x‸"
+ },
+ {
+  "id": "enter-over-all",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "key",
+    "Enter"
+   ]
+  ],
+  "text": "\n‸",
+  "empty": false
+ },
+ {
+  "id": "literal-markup",
+  "group": "whitespace",
+  "steps": [
+   [
+    "type",
+    "<b>x</b> &amp;"
+   ]
+  ],
+  "text": "<b>x</b> &amp;‸",
+  "clean": true,
+  "why": "typed markup is text"
+ },
+ {
+  "id": "left-twice",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "a‸bc"
+ },
+ {
+  "id": "left-past-start",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "‸abc"
+ },
+ {
+  "id": "right-past-end",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "right"
+   ]
+  ],
+  "text": "abc‸"
+ },
+ {
+  "id": "word-left",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "wordLeft"
+   ]
+  ],
+  "text": "hello ‸world"
+ },
+ {
+  "id": "word-left-twice",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "wordLeft"
+   ],
+   [
+    "move",
+    "wordLeft"
+   ]
+  ],
+  "text": "‸hello world"
+ },
+ {
+  "id": "word-right",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "wordRight"
+   ]
+  ],
+  "text": "hello‸ world"
+ },
+ {
+  "id": "line-start",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "lineStart"
+   ]
+  ],
+  "text": "‸hello world"
+ },
+ {
+  "id": "line-end",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "move",
+    "lineEnd"
+   ]
+  ],
+  "text": "hello world‸"
+ },
+ {
+  "id": "line-start-line-two",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ]
+  ],
+  "text": "ab\n‸cd"
+ },
+ {
+  "id": "line-end-line-one",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "lineEnd"
+   ]
+  ],
+  "text": "ab‸\ncd"
+ },
+ {
+  "id": "doc-start",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ]
+  ],
+  "text": "‸ab\ncd"
+ },
+ {
+  "id": "doc-end",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "docEnd"
+   ]
+  ],
+  "text": "ab\ncd‸"
+ },
+ {
+  "id": "up",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "de"
+   ],
+   [
+    "move",
+    "up"
+   ]
+  ],
+  "text": "ab‸c\nde"
+ },
+ {
+  "id": "up-down",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "de"
+   ],
+   [
+    "move",
+    "up"
+   ],
+   [
+    "move",
+    "down"
+   ]
+  ],
+  "text": "abc\nde‸"
+ },
+ {
+  "id": "up-to-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "up"
+   ]
+  ],
+  "text": "ab\n‸\ncd"
+ },
+ {
+  "id": "up-over-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "up"
+   ],
+   [
+    "move",
+    "up"
+   ]
+  ],
+  "text": "ab‸\n\ncd",
+  "why": "the column is remembered across a blank line"
+ },
+ {
+  "id": "down-over-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "move",
+    "down"
+   ],
+   [
+    "move",
+    "down"
+   ]
+  ],
+  "text": "ab\n\nc‸d"
+ },
+ {
+  "id": "up-first-line",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "up"
+   ]
+  ],
+  "text": "‸abc"
+ },
+ {
+  "id": "down-last-line",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "down"
+   ]
+  ],
+  "text": "abc‸"
+ },
+ {
+  "id": "left-over-break",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "ab‸\ncd"
+ },
+ {
+  "id": "right-over-break",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "move",
+    "right"
+   ]
+  ],
+  "text": "ab\n‸cd"
+ },
+ {
+  "id": "left-to-leading-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "a"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "‸\na"
+ },
+ {
+  "id": "up-to-leading-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "a"
+   ],
+   [
+    "move",
+    "up"
+   ]
+  ],
+  "text": "‸\na"
+ },
+ {
+  "id": "right-out-of-trailing-blank",
+  "group": "caret",
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "move",
+    "right"
+   ]
+  ],
+  "text": "a\n‸"
+ },
+ {
+  "id": "sel-left-type",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "aX‸"
+ },
+ {
+  "id": "sel-word-left",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "select",
+    "wordLeft"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "hello X‸"
+ },
+ {
+  "id": "sel-line-start",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "select",
+    "lineStart"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "X‸"
+ },
+ {
+  "id": "sel-doc-start",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "select",
+    "docStart"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "X‸"
+ },
+ {
+  "id": "sel-up",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "select",
+    "up"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "abX‸"
+ },
+ {
+  "id": "sel-down",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "select",
+    "down"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "X‸cd"
+ },
+ {
+  "id": "sel-shrink",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "select",
+    "right"
+   ],
+   [
+    "select",
+    "right"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "X‸bc"
+ },
+ {
+  "id": "sel-all-right",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "move",
+    "right"
+   ]
+  ],
+  "text": "abc‸"
+ },
+ {
+  "id": "sel-all-left",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "‸abc"
+ },
+ {
+  "id": "sel-all-backspace",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "sel-all-multiline-delete",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "sel-over-break-backspace",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "select",
+    "up"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "a‸d"
+ },
+ {
+  "id": "sel-blank-line-type",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "abX‸cd"
+ },
+ {
+  "id": "bs-at-start",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸abc"
+ },
+ {
+  "id": "del-at-end",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "abc‸"
+ },
+ {
+  "id": "del-mid",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "abc"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "a‸c"
+ },
+ {
+  "id": "bs-joins-lines",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "ab‸cd"
+ },
+ {
+  "id": "del-joins-lines",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "lineEnd"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "ab‸cd"
+ },
+ {
+  "id": "bs-blank-line",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "ab\n‸cd"
+ },
+ {
+  "id": "del-blank-line",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "move",
+    "lineEnd"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "ab‸\ncd"
+ },
+ {
+  "id": "bs-leading-blank",
+  "group": "delete",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "a"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸a"
+ },
+ {
+  "id": "bs-all-chars",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Backspace"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "bs-to-empty-from-lines",
+  "group": "delete",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "a"
+   ],
+   [
+    "key",
+    "Backspace"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "word-bs",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ]
+  ],
+  "text": "hello ‸"
+ },
+ {
+  "id": "word-bs-twice",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "word-del-fwd",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "delete",
+    "wordForward"
+   ]
+  ],
+  "text": "‸ world"
+ },
+ {
+  "id": "word-bs-at-line-start",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ]
+  ],
+  "text": "ab‸cd"
+ },
+ {
+  "id": "line-bs",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "delete",
+    "lineBack"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "line-bs-line-two",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "delete",
+    "lineBack"
+   ]
+  ],
+  "text": "ab\n‸"
+ },
+ {
+  "id": "line-bs-mid",
+  "group": "delete",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "move",
+    "wordLeft"
+   ],
+   [
+    "delete",
+    "lineBack"
+   ]
+  ],
+  "text": "‸world"
+ },
+ {
+  "id": "undo-typing",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "undo-redo-typing",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "undo"
+   ],
+   [
+    "redo"
+   ]
+  ],
+  "text": "hello‸"
+ },
+ {
+  "id": "undo-backspace",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "key",
+    "Backspace"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "hello",
+  "why": "an undone delete comes back selected, as on a Mac"
+ },
+ {
+  "id": "undo-word-bs",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "hello world"
+ },
+ {
+  "id": "undo-enter",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "ab‸"
+ },
+ {
+  "id": "undo-enter-first",
+  "group": "undo",
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "undo-select-all-delete",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "key",
+    "Delete"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "hello",
+  "why": "the caret may sit at either end of the restored text, as long as nothing is lost"
+ },
+ {
+  "id": "undo-paste",
+  "group": "undo",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "a "
+   ],
+   [
+    "paste",
+    {
+     "text": "pasted"
+    }
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "a ‸"
+ },
+ {
+  "id": "redo-paste",
+  "group": "undo",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "a "
+   ],
+   [
+    "paste",
+    {
+     "text": "pasted"
+    }
+   ],
+   [
+    "undo"
+   ],
+   [
+    "redo"
+   ]
+  ],
+  "text": "a pasted‸"
+ },
+ {
+  "id": "undo-paste-lines",
+  "group": "undo",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\ntwo"
+    }
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "undo-cut",
+  "group": "undo",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "select",
+    "wordLeft"
+   ],
+   [
+    "cut"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "hello world"
+ },
+ {
+  "id": "undo-twice",
+  "group": "undo",
+  "steps": [
+   [
+    "type",
+    "one"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "two"
+   ],
+   [
+    "undo"
+   ],
+   [
+    "undo"
+   ]
+  ],
+  "text": "one‸",
+  "why": "each undo takes one step back, not the whole note"
+ },
+ {
+  "id": "paste-word",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "pasted"
+    }
+   ]
+  ],
+  "text": "pasted‸"
+ },
+ {
+  "id": "paste-lines",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\ntwo"
+    }
+   ]
+  ],
+  "text": "one\ntwo‸"
+ },
+ {
+  "id": "paste-paragraphs",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\n\ntwo"
+    }
+   ]
+  ],
+  "text": "one\n\ntwo‸"
+ },
+ {
+  "id": "paste-trailing-newline",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\n"
+    }
+   ]
+  ],
+  "text": "one\n‸"
+ },
+ {
+  "id": "paste-leading-newline",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "paste",
+    {
+     "text": "\nb"
+    }
+   ]
+  ],
+  "text": "a\nb‸"
+ },
+ {
+  "id": "paste-leading-spaces",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "  indented"
+    }
+   ]
+  ],
+  "text": "  indented‸"
+ },
+ {
+  "id": "paste-mid",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "ac"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "paste",
+    {
+     "text": "b"
+    }
+   ]
+  ],
+  "text": "ab‸c"
+ },
+ {
+  "id": "paste-lines-mid",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "ad"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "paste",
+    {
+     "text": "b\nc"
+    }
+   ]
+  ],
+  "text": "ab\nc‸d"
+ },
+ {
+  "id": "paste-over-selection",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "paste",
+    {
+     "text": "bye"
+    }
+   ]
+  ],
+  "text": "bye‸"
+ },
+ {
+  "id": "paste-crlf",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\r\ntwo"
+    }
+   ]
+  ],
+  "text": "one\ntwo‸"
+ },
+ {
+  "id": "paste-tab",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "a\tb"
+    }
+   ]
+  ],
+  "text": "a\tb‸"
+ },
+ {
+  "id": "paste-double-space",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "a  b"
+    }
+   ]
+  ],
+  "text": "a  b‸"
+ },
+ {
+  "id": "paste-at-line-two-start",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "move",
+    "lineStart"
+   ],
+   [
+    "paste",
+    {
+     "text": "X"
+    }
+   ]
+  ],
+  "text": "ab\nX‸cd"
+ },
+ {
+  "id": "copy-paste-own",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "copy"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "paste"
+   ]
+  ],
+  "text": "hellohello‸"
+ },
+ {
+  "id": "copy-paste-own-lines",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "copy"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "paste"
+   ]
+  ],
+  "text": "ab\ncdab\ncd‸"
+ },
+ {
+  "id": "copy-paste-own-blank-lines",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "copy"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "paste"
+   ]
+  ],
+  "text": "ab\n\ncd\nab\n\ncd‸"
+ },
+ {
+  "id": "cut-paste",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "hello world"
+   ],
+   [
+    "select",
+    "wordLeft"
+   ],
+   [
+    "cut"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "paste"
+   ]
+  ],
+  "text": "world‸hello "
+ },
+ {
+  "id": "cut-all-empty",
+  "group": "paste",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "type",
+    "hello"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "cut"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "rich-bold",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "bold and italic",
+     "html": "<b>bold</b> and <i>italic</i>"
+    }
+   ]
+  ],
+  "text": "bold and italic‸"
+ },
+ {
+  "id": "rich-link",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "a link",
+     "html": "<a href=\"https://example.com/\">a link</a>"
+    }
+   ]
+  ],
+  "text": "a link‸"
+ },
+ {
+  "id": "rich-color",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "red text",
+     "html": "<span style=\"color:red;font-family:Comic Sans MS;font-size:30px\">red text</span>"
+    }
+   ]
+  ],
+  "text": "red text‸"
+ },
+ {
+  "id": "rich-paragraphs",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "one\n\ntwo",
+     "html": "<p>one</p><p>two</p>"
+    }
+   ]
+  ],
+  "text": "one\n\ntwo‸"
+ },
+ {
+  "id": "rich-list",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "a\nb",
+     "html": "<ul><li>a</li><li>b</li></ul>"
+    }
+   ]
+  ],
+  "text": "a\nb‸"
+ },
+ {
+  "id": "rich-heading",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "Title\nbody",
+     "html": "<h1>Title</h1><p>body</p>"
+    }
+   ]
+  ],
+  "text": "Title\nbody‸"
+ },
+ {
+  "id": "rich-table",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "a\tb",
+     "html": "<table><tr><td>a</td><td>b</td></tr></table>"
+    }
+   ]
+  ],
+  "text": "a\tb‸"
+ },
+ {
+  "id": "rich-image-only",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "type",
+    "x"
+   ],
+   [
+    "paste",
+    {
+     "text": "",
+     "html": "<img src=\"https://example.com/x.png\" width=\"400\" height=\"300\">"
+    }
+   ]
+  ],
+  "text": "x‸",
+  "why": "a picture in copied HTML is not uploaded, so it must not sit in the note"
+ },
+ {
+  "id": "rich-docs",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "why": "what a word processor puts on the clipboard",
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "from a doc",
+     "html": "<meta charset=\"utf-8\"><b style=\"font-weight:normal;\" id=\"docs-internal-guid-1\"><span style=\"font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;\">from a doc</span></b>"
+    }
+   ]
+  ],
+  "text": "from a doc‸"
+ },
+ {
+  "id": "rich-html-only",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "html": "<b>only html</b>"
+    }
+   ]
+  ],
+  "text": "only html‸",
+  "why": "some apps put only HTML on the clipboard"
+ },
+ {
+  "id": "rich-mid-line",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "type",
+    "ac"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "paste",
+    {
+     "text": "b",
+     "html": "<strong style=\"color:blue\">b</strong>"
+    }
+   ],
+   [
+    "type",
+    "!"
+   ]
+  ],
+  "text": "ab!‸c",
+  "why": "text typed after a rich paste is not bold or blue either"
+ },
+ {
+  "id": "rich-script",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "safe",
+     "html": "<img src=x onerror=\"window.__pwned=1\"><span>safe</span>"
+    }
+   ]
+  ],
+  "text": "safe‸"
+ },
+ {
+  "id": "drop-plain",
+  "group": "drop",
+  "needs": [
+   "drop"
+  ],
+  "steps": [
+   [
+    "type",
+    "a "
+   ],
+   [
+    "drop",
+    {
+     "text": "dropped"
+    }
+   ]
+  ],
+  "text": "a dropped"
+ },
+ {
+  "id": "drop-rich",
+  "group": "drop",
+  "needs": [
+   "drop"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "type",
+    "a "
+   ],
+   [
+    "drop",
+    {
+     "text": "bold",
+     "html": "<b style=\"color:red\">bold</b>"
+    }
+   ]
+  ],
+  "text": "a bold"
+ },
+ {
+  "id": "drop-image-file",
+  "group": "drop",
+  "needs": [
+   "dropFile"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "dropFile",
+    "orange.png"
+   ]
+  ],
+  "text": "a",
+  "why": "a picture dragged from the desktop is an attachment, never an inline image"
+ },
+ {
+  "id": "drop-rich-image",
+  "group": "drop",
+  "needs": [
+   "drop"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "drop",
+    {
+     "text": "",
+     "html": "<img src=\"https://example.com/x.png\">"
+    }
+   ]
+  ],
+  "text": "a"
+ },
+ {
+  "id": "emoji-bs",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a😀"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "a‸"
+ },
+ {
+  "id": "emoji-only-bs",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "😀"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "‸",
+  "empty": true
+ },
+ {
+  "id": "emoji-zwj-bs",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a👨‍👩‍👧"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "a‸",
+  "why": "a family emoji is one character to a person"
+ },
+ {
+  "id": "emoji-flag-bs",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a🇺🇸"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "a‸"
+ },
+ {
+  "id": "emoji-skin-bs",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a👍🏽"
+   ],
+   [
+    "key",
+    "Backspace"
+   ]
+  ],
+  "text": "a‸"
+ },
+ {
+  "id": "emoji-left",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a😀b"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "a‸😀b"
+ },
+ {
+  "id": "emoji-zwj-left",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a👨‍👩‍👧b"
+   ],
+   [
+    "move",
+    "left"
+   ],
+   [
+    "move",
+    "left"
+   ]
+  ],
+  "text": "a‸👨‍👩‍👧b"
+ },
+ {
+  "id": "emoji-del-fwd",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "😀b"
+   ],
+   [
+    "move",
+    "docStart"
+   ],
+   [
+    "key",
+    "Delete"
+   ]
+  ],
+  "text": "‸b"
+ },
+ {
+  "id": "emoji-sel-left",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "a🇺🇸"
+   ],
+   [
+    "select",
+    "left"
+   ],
+   [
+    "type",
+    "X"
+   ]
+  ],
+  "text": "aX‸"
+ },
+ {
+  "id": "accented",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "café naïve"
+   ],
+   [
+    "move",
+    "wordLeft"
+   ]
+  ],
+  "text": "café ‸naïve"
+ },
+ {
+  "id": "cyrillic-word",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "привет мир"
+   ],
+   [
+    "delete",
+    "wordBack"
+   ]
+  ],
+  "text": "привет ‸"
+ },
+ {
+  "id": "arabic",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "مرحبا بالعالم"
+   ]
+  ],
+  "text": "مرحبا بالعالم‸"
+ },
+ {
+  "id": "hebrew-mixed",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "שלום hello"
+   ]
+  ],
+  "text": "שלום hello‸"
+ },
+ {
+  "id": "cjk",
+  "group": "chars",
+  "steps": [
+   [
+    "type",
+    "日本語のテキスト"
+   ]
+  ],
+  "text": "日本語のテキスト‸"
+ },
+ {
+  "id": "ime-commit",
+  "group": "chars",
+  "needs": [
+   "ime"
+  ],
+  "steps": [
+   [
+    "ime",
+    [
+     "に",
+     "にほ",
+     "にほん"
+    ],
+    "日本"
+   ]
+  ],
+  "text": "日本‸"
+ },
+ {
+  "id": "ime-after-text",
+  "group": "chars",
+  "needs": [
+   "ime"
+  ],
+  "steps": [
+   [
+    "type",
+    "a "
+   ],
+   [
+    "ime",
+    [
+     "に",
+     "にほ",
+     "にほん"
+    ],
+    "日本"
+   ],
+   [
+    "type",
+    "!"
+   ]
+  ],
+  "text": "a 日本!‸"
+ },
+ {
+  "id": "ime-after-enter",
+  "group": "chars",
+  "needs": [
+   "ime"
+  ],
+  "steps": [
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "ime",
+    [
+     "か",
+     "かん"
+    ],
+    "漢"
+   ],
+   [
+    "type",
+    "字"
+   ]
+  ],
+  "text": "\n漢字‸"
+ },
+ {
+  "id": "ime-cancel",
+  "group": "chars",
+  "needs": [
+   "ime"
+  ],
+  "steps": [
+   [
+    "type",
+    "a"
+   ],
+   [
+    "ime",
+    [
+     "に",
+     "にほ"
+    ],
+    ""
+   ]
+  ],
+  "text": "a‸"
+ },
+ {
+  "id": "paste-emoji-lines",
+  "group": "chars",
+  "needs": [
+   "paste"
+  ],
+  "steps": [
+   [
+    "paste",
+    {
+     "text": "🎉 one\n🎉 two"
+    }
+   ]
+  ],
+  "text": "🎉 one\n🎉 two‸"
+ }
+]

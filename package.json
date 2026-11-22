@@ -1,0 +1,12 @@
+{
+  "name": "editor-matrix",
+  "version": "0.1.0",
+  "description": "What a text editor must do: one list of cases, run against every composer (web, iOS, Android) with real input.",
+  "license": "MIT",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "cases": "node cases.js",
+    "sidecar": "node run.js sidecar"
+  }
+}
