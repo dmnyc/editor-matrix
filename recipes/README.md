@@ -38,10 +38,24 @@ Audited 2026-11-22 from the source of each app; a ? is checked before the first 
 
 ### What is published
 
+**The tag rule.** Every `t` tag a recipe publishes (`zapcooking-<title>`, `zapcooking-<category>`,
+and an article's topics) is made the same way: lowercase, whitespace to a hyphen, then nothing
+but letters, combining marks and digits of any script and hyphens, with repeated hyphens
+collapsed and none at either end. "Za’atar & Mac: Take 2!" is `zapcooking-zaatar-mac-take-2`,
+"मसाला दोसा" is `zapcooking-मसाला-दोसा`, and a title or category with nothing left publishes no
+tag. Punctuation in a tag broke client links at `?` and `&`, kept a typed `#hashtag` from
+reaching it, and made `'` and `’` two tags. **The `d` tag keeps its own rule** (lowercase,
+spaces to hyphens, colons removed), because an edit must land at the address the recipe
+already has. So the title tag is no longer always `zapcooking-` + the `d` tag: an app that
+recognizes the title tag (Zap Cooking's fork page) compares it with the tag rule applied to
+the title, and keeps accepting `zapcooking-` + `d` for recipes published before.
+
 | Behavior | Sidecar | Web | iOS | Android |
 |---|---|---|---|---|
 | Content in Zap Cooking's `createMarkdown` sections, newline for newline (`fixtures.json`) | ✅ | ✅ | ? | ? |
 | Tags: `d`, `title`, `r` source, `t` `zapcooking` and `zapcooking-<title>`, `summary`, `image` per photo, `t` per category, `published_at` | ✅ | ✅ | ? | ? |
+| Tags follow the tag rule (`fixtures.json`, the punctuation case) | ✅ | ❌ keeps punctuation | ? | ? |
+| The title tag is recognized by the tag rule, and by `zapcooking-` + `d` for older recipes (forking does not turn it into a category) | — | ❌ compares with `d` only | ? | ? |
 | A source with a username or password in it is dropped | ✅ | ? | ? | ? |
 | Categories filed under their English names whatever the interface language | ✅ | ? | ? | ? |
 

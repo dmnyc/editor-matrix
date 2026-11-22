@@ -1,5 +1,5 @@
 {
-  "about": "What a recipe composer publishes for given form fields: kind, tags and content, exactly. Generated from Sidecar's longform-events.js (recipeTemplate), which writes Zap Cooking's createMarkdown format. created_at and published_at are fixed at 1700000000; app-specific tags (client, imeta) are left out. Each app's recipe builder must produce these.",
+  "about": "What a recipe composer publishes for given form fields: kind, tags and content, exactly. Generated from Sidecar's longform-events.js (recipeTemplate), which writes Zap Cooking's createMarkdown format. created_at and published_at are fixed at 1700000000; app-specific tags (client, imeta) are left out. Each app's recipe builder must produce these. Tags follow the tag rule in README.md (lowercase, spaces to hyphens, only letters, marks, digits and hyphens of any script); the d tag keeps its own rule, so an edit lands where the recipe already is.",
   "cases": [
     {
       "name": "every field",
@@ -186,7 +186,7 @@
           ],
           [
             "t",
-            "zapcooking-soup:-the-sequel"
+            "zapcooking-soup-the-sequel"
           ],
           [
             "image",
@@ -202,6 +202,72 @@
           ]
         ],
         "content": "\n## Details\n\n- 🍽️ Servings: 4\n\n## Ingredients\n\n- water\n\n\n## Directions\n\n1. Boil.\n"
+      }
+    },
+    {
+      "name": "punctuation in the title and in a category of your own (the tag rule)",
+      "fields": {
+        "title": "Za’atar & Mac: Take 2!",
+        "summary": "",
+        "notes": "",
+        "prep": "",
+        "cook": "",
+        "servings": "",
+        "ingredients": [
+          "pasta"
+        ],
+        "directions": [
+          "Cook."
+        ],
+        "categories": [
+          "Middle-Eastern",
+          "Mom’s Best!",
+          "!!!"
+        ],
+        "photos": [
+          {
+            "url": "https://example.com/z.jpg"
+          }
+        ],
+        "source": ""
+      },
+      "expect": {
+        "kind": 30023,
+        "tags": [
+          [
+            "d",
+            "za’atar-&-mac-take-2!"
+          ],
+          [
+            "title",
+            "Za’atar & Mac: Take 2!"
+          ],
+          [
+            "t",
+            "zapcooking"
+          ],
+          [
+            "t",
+            "zapcooking-zaatar-mac-take-2"
+          ],
+          [
+            "image",
+            "https://example.com/z.jpg"
+          ],
+          [
+            "t",
+            "zapcooking-middle-eastern"
+          ],
+          [
+            "t",
+            "zapcooking-moms-best"
+          ],
+          [
+            "published_at",
+            "1700000000"
+          ]
+        ],
+        "content": "\n## Ingredients\n\n- pasta\n\n\n## Directions\n\n1. Cook.\n"
       }
     }
   ]
