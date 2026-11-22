@@ -36,7 +36,24 @@ const list = (v) => (v ? v.split(',') : undefined);
     } finally { x.close(); }
     const control = out[`sidecar/control/${browser}`];
     for (const [name, results] of Object.entries(out)) console.log(report(name, results, name.includes('/control/') ? null : control));
+  } else if (app === 'zapcooking') {
+    const { startZapCooking, zapcookingAdapter } = require('./adapters/zapcooking-web');
+    const surfaces = list(opt('surface', 'note'));
+    if (!args.includes('--no-control')) surfaces.unshift('control');
+    const z = await startZapCooking({ headless: !args.includes('--headed') });
+    try {
+      for (const surface of surfaces) {
+        const a = await zapcookingAdapter(z, { surface });
+        process.stderr.write(`${a.name}: `);
+        out[a.name] = await run(a, cases, { onResult: (r) => process.stderr.write(r.status === 'pass' ? '.' : r.status === 'skip' ? 's' : 'F') });
+        process.stderr.write('\n');
+        await a.close();
+      }
+    } finally { z.chrome.close(); }
+    const control = out['zapcooking/control/chrome'];
+    for (const [name, results] of Object.entries(out)) console.log(report(name, results, name.includes('/control/') ? null : control));
   } else {
+    console.error('usage: node run.js zapcooking [--surface note] [--only groups] [--ids ids]');
     console.error('usage: node run.js sidecar [--browser chrome|firefox] [--surface compose,panel] [--only groups] [--ids ids]');
     process.exit(2);
   }

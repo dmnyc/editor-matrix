@@ -44,8 +44,12 @@ Node 22 or later, Chrome and/or Firefox installed. No dependencies.
     SIDECAR_ROOT=../sidecar node run.js sidecar --browser firefox --surface panel --only rich,paste
     SIDECAR_ROOT=../sidecar node run.js sidecar --ids enter-first,undo-paste --json results/out.json
 
+    # Zap Cooking on the web (its dev server running; surfaces: note, reply, article)
+    ZAPCOOKING_URL=http://localhost:5173 node run.js zapcooking --surface note,reply
+    ZAPCOOKING_URL=http://localhost:5173 node run.js zapcooking --surface article --only undo,paste
+
 `--only` takes groups (`whitespace caret select delete undo paste rich drop chars`), `--ids`
-takes case ids, `--no-control` skips the bare editor. The exit code is 1 when any app case
+takes case ids, `--no-control` skips the bare editor, `--headed` (Zap Cooking) shows the browser. The exit code is 1 when any app case
 fails.
 
 Firefox has no WebDriver support for drag and drop or input methods; those cases report as
@@ -61,6 +65,11 @@ skipped, never as passed.
 3. If the expectation itself is wrong, fix the case and say why in its `why` field. Platform
    behavior is the reference: macOS and iOS editing for now (Option+arrows stop at word
    ends; an undone delete comes back selected).
+
+## Findings
+
+[docs/findings.md](docs/findings.md) logs each run worth keeping: which app and surface, the
+count before and after a change, which cases a fix turned, and what the matrix could not see.
 
 ## Adding cases
 
