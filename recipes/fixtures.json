@@ -1,0 +1,208 @@
+{
+  "about": "What a recipe composer publishes for given form fields: kind, tags and content, exactly. Generated from Sidecar's longform-events.js (recipeTemplate), which writes Zap Cooking's createMarkdown format. created_at and published_at are fixed at 1700000000; app-specific tags (client, imeta) are left out. Each app's recipe builder must produce these.",
+  "cases": [
+    {
+      "name": "every field",
+      "fields": {
+        "title": "Pumpkin Bread",
+        "summary": "Moist and spiced",
+        "notes": "Use cold butter.\n\nRest it overnight.",
+        "prep": "20 min",
+        "cook": "1 hr",
+        "servings": "8",
+        "ingredients": [
+          "2 cups flour",
+          "1 can pumpkin"
+        ],
+        "directions": [
+          "Mix the dry ingredients.",
+          "Bake at 350°F for an hour."
+        ],
+        "categories": [
+          "Bread",
+          "Raw Vegan"
+        ],
+        "photos": [
+          {
+            "url": "https://example.com/a.jpg"
+          },
+          {
+            "url": "https://example.com/b.jpg"
+          }
+        ],
+        "source": "https://example.com/bread"
+      },
+      "expect": {
+        "kind": 30023,
+        "tags": [
+          [
+            "d",
+            "pumpkin-bread"
+          ],
+          [
+            "title",
+            "Pumpkin Bread"
+          ],
+          [
+            "r",
+            "https://example.com/bread"
+          ],
+          [
+            "t",
+            "zapcooking"
+          ],
+          [
+            "t",
+            "zapcooking-pumpkin-bread"
+          ],
+          [
+            "summary",
+            "Moist and spiced"
+          ],
+          [
+            "image",
+            "https://example.com/a.jpg"
+          ],
+          [
+            "image",
+            "https://example.com/b.jpg"
+          ],
+          [
+            "t",
+            "zapcooking-bread"
+          ],
+          [
+            "t",
+            "zapcooking-raw-vegan"
+          ],
+          [
+            "published_at",
+            "1700000000"
+          ]
+        ],
+        "content": "\n## Chef's notes\n\nUse cold butter.\n\nRest it overnight.\n\n## Details\n\n- ⏲️ Prep time: 20 min\n- 🍳 Cook time: 1 hr\n- 🍽️ Servings: 8\n\n## Ingredients\n\n- 2 cups flour\n- 1 can pumpkin\n\n\n## Directions\n\n1. Mix the dry ingredients.\n2. Bake at 350°F for an hour.\n\n\n## Additional Resources\n\nOriginal recipe: <https://example.com/bread>\n\n"
+      }
+    },
+    {
+      "name": "only the required fields",
+      "fields": {
+        "title": "Toast",
+        "summary": "",
+        "notes": "",
+        "prep": "",
+        "cook": "",
+        "servings": "",
+        "ingredients": [
+          "bread"
+        ],
+        "directions": [
+          "Toast it."
+        ],
+        "categories": [
+          "Breakfast"
+        ],
+        "photos": [
+          {
+            "url": "https://example.com/t.jpg"
+          }
+        ],
+        "source": ""
+      },
+      "expect": {
+        "kind": 30023,
+        "tags": [
+          [
+            "d",
+            "toast"
+          ],
+          [
+            "title",
+            "Toast"
+          ],
+          [
+            "t",
+            "zapcooking"
+          ],
+          [
+            "t",
+            "zapcooking-toast"
+          ],
+          [
+            "image",
+            "https://example.com/t.jpg"
+          ],
+          [
+            "t",
+            "zapcooking-breakfast"
+          ],
+          [
+            "published_at",
+            "1700000000"
+          ]
+        ],
+        "content": "\n## Ingredients\n\n- bread\n\n\n## Directions\n\n1. Toast it.\n"
+      }
+    },
+    {
+      "name": "a title with a colon, and a source with credentials (dropped)",
+      "fields": {
+        "title": "Soup: The Sequel",
+        "summary": "",
+        "notes": "",
+        "prep": "",
+        "cook": "",
+        "servings": "4",
+        "ingredients": [
+          "water"
+        ],
+        "directions": [
+          "Boil."
+        ],
+        "categories": [
+          "Soup",
+          "Soup"
+        ],
+        "photos": [
+          {
+            "url": "https://example.com/s.jpg"
+          }
+        ],
+        "source": "https://user:pw@example.com/x"
+      },
+      "expect": {
+        "kind": 30023,
+        "tags": [
+          [
+            "d",
+            "soup-the-sequel"
+          ],
+          [
+            "title",
+            "Soup: The Sequel"
+          ],
+          [
+            "t",
+            "zapcooking"
+          ],
+          [
+            "t",
+            "zapcooking-soup:-the-sequel"
+          ],
+          [
+            "image",
+            "https://example.com/s.jpg"
+          ],
+          [
+            "t",
+            "zapcooking-soup"
+          ],
+          [
+            "published_at",
+            "1700000000"
+          ]
+        ],
+        "content": "\n## Details\n\n- 🍽️ Servings: 4\n\n## Ingredients\n\n- water\n\n\n## Directions\n\n1. Boil.\n"
+      }
+    }
+  ]
+}

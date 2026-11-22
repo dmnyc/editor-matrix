@@ -69,3 +69,11 @@ case is seen to fail first. Keep cases app-neutral; behavior only one app has (m
 pills, attachment offers) belongs in that app's own tests. See
 [docs/writing-an-adapter.md](docs/writing-an-adapter.md) for the step vocabulary and for
 adding an app, including native runners.
+
+## Recipe composers
+
+The four apps that publish Zap Cooking recipes keep their recipe composers in step through
+[recipes/](recipes/README.md): the rule they follow, a table of every recipe-composer behavior
+with its state in each app, the exact events a recipe's fields must publish as
+(`recipes/fixtures.json`), and the one list of categories with their emoji
+(`recipes/categories.json`).

@@ -1,0 +1,653 @@
+{
+ "about": "Zap Cooking's recipe categories, shared by every recipe composer (Sidecar, Zap Cooking web, iOS, Android). The name is what is published, as `zapcooking-<name lowercased, spaces to hyphens>`; the emoji is shown beside it and never published; names are shown translated where an app is translated, and filed in English. Source: zapcooking/frontend src/lib/consts.ts recipeTags at c288b87b. An emoji of null has none yet: one is chosen here, then every app takes it.",
+ "categories": [
+  {
+   "name": "Alcohol",
+   "emoji": "🍸"
+  },
+  {
+   "name": "Nuts",
+   "emoji": "🥜"
+  },
+  {
+   "name": "American",
+   "emoji": "🇺🇸"
+  },
+  {
+   "name": "Apple",
+   "emoji": "🍎"
+  },
+  {
+   "name": "Argentinian",
+   "emoji": "🇦🇷"
+  },
+  {
+   "name": "Asian",
+   "emoji": "🥢"
+  },
+  {
+   "name": "Australian",
+   "emoji": "🇦🇺"
+  },
+  {
+   "name": "Austrian",
+   "emoji": "🇦🇹"
+  },
+  {
+   "name": "Bacon",
+   "emoji": "🥓"
+  },
+  {
+   "name": "Baked",
+   "emoji": "⏲️"
+  },
+  {
+   "name": "Beans",
+   "emoji": "🧆"
+  },
+  {
+   "name": "Beef",
+   "emoji": "🐄"
+  },
+  {
+   "name": "Belgian",
+   "emoji": "🇧🇪"
+  },
+  {
+   "name": "Blended",
+   "emoji": "🥤"
+  },
+  {
+   "name": "Brazilian",
+   "emoji": "🇧🇷"
+  },
+  {
+   "name": "Bread",
+   "emoji": "🍞"
+  },
+  {
+   "name": "Breakfast",
+   "emoji": "🍳"
+  },
+  {
+   "name": "Broccoli",
+   "emoji": null
+  },
+  {
+   "name": "Cabbage",
+   "emoji": null
+  },
+  {
+   "name": "Cajun",
+   "emoji": null
+  },
+  {
+   "name": "Cake",
+   "emoji": "🍰"
+  },
+  {
+   "name": "Caribbean",
+   "emoji": "🏝️"
+  },
+  {
+   "name": "Cheese",
+   "emoji": "🧀"
+  },
+  {
+   "name": "Chicken",
+   "emoji": "🍗"
+  },
+  {
+   "name": "Chinese",
+   "emoji": "🥡"
+  },
+  {
+   "name": "Chocolate",
+   "emoji": "🍫"
+  },
+  {
+   "name": "Christmas",
+   "emoji": "🎄"
+  },
+  {
+   "name": "Cocktail",
+   "emoji": "🍹"
+  },
+  {
+   "name": "Coconut",
+   "emoji": "🥥"
+  },
+  {
+   "name": "Cookies",
+   "emoji": "🍪"
+  },
+  {
+   "name": "Coffee",
+   "emoji": "☕"
+  },
+  {
+   "name": "Corn",
+   "emoji": "🌽"
+  },
+  {
+   "name": "Cream",
+   "emoji": "🥛"
+  },
+  {
+   "name": "Curry",
+   "emoji": "🍛"
+  },
+  {
+   "name": "Danish",
+   "emoji": null
+  },
+  {
+   "name": "Dessert",
+   "emoji": "🧁"
+  },
+  {
+   "name": "Dominican",
+   "emoji": "🇩🇴"
+  },
+  {
+   "name": "Dressing",
+   "emoji": null
+  },
+  {
+   "name": "Drinks",
+   "emoji": "🥤"
+  },
+  {
+   "name": "Duck",
+   "emoji": "🦆"
+  },
+  {
+   "name": "Dumpling",
+   "emoji": "🥟"
+  },
+  {
+   "name": "Dutch",
+   "emoji": "🇳🇱"
+  },
+  {
+   "name": "Easter",
+   "emoji": "🐰"
+  },
+  {
+   "name": "Easy",
+   "emoji": "😌"
+  },
+  {
+   "name": "Eggs",
+   "emoji": "🥚"
+  },
+  {
+   "name": "English",
+   "emoji": "🏴"
+  },
+  {
+   "name": "Ethiopian",
+   "emoji": "🇪🇹"
+  },
+  {
+   "name": "Feta",
+   "emoji": "🧀"
+  },
+  {
+   "name": "Filipino",
+   "emoji": "🇵🇭"
+  },
+  {
+   "name": "Fish",
+   "emoji": "🐟"
+  },
+  {
+   "name": "French",
+   "emoji": "🇫🇷"
+  },
+  {
+   "name": "Frozen",
+   "emoji": "🥶"
+  },
+  {
+   "name": "Fruit",
+   "emoji": "🍇"
+  },
+  {
+   "name": "Fry",
+   "emoji": "🍟"
+  },
+  {
+   "name": "Galician",
+   "emoji": null
+  },
+  {
+   "name": "Garlic",
+   "emoji": "🧄"
+  },
+  {
+   "name": "German",
+   "emoji": "🇩🇪"
+  },
+  {
+   "name": "Greek",
+   "emoji": "🇬🇷"
+  },
+  {
+   "name": "Ham",
+   "emoji": "🍖"
+  },
+  {
+   "name": "Hungarian",
+   "emoji": "🇭🇺"
+  },
+  {
+   "name": "Indian",
+   "emoji": "🇮🇳"
+  },
+  {
+   "name": "Irish",
+   "emoji": "☘️"
+  },
+  {
+   "name": "Israeli",
+   "emoji": "🇮🇱"
+  },
+  {
+   "name": "Italian",
+   "emoji": "🇮🇹"
+  },
+  {
+   "name": "Jamaican",
+   "emoji": "🇯🇲"
+  },
+  {
+   "name": "Jam",
+   "emoji": null
+  },
+  {
+   "name": "Japanese",
+   "emoji": "🇯🇵"
+  },
+  {
+   "name": "Korean",
+   "emoji": "🇰🇷"
+  },
+  {
+   "name": "Keto",
+   "emoji": "🥓"
+  },
+  {
+   "name": "Lamb",
+   "emoji": "🐑"
+  },
+  {
+   "name": "Lebanese",
+   "emoji": "🇱🇧"
+  },
+  {
+   "name": "Lemons",
+   "emoji": "🍋"
+  },
+  {
+   "name": "Lentil",
+   "emoji": null
+  },
+  {
+   "name": "Liquor",
+   "emoji": "🥃"
+  },
+  {
+   "name": "Liver",
+   "emoji": "🍖"
+  },
+  {
+   "name": "Lunch",
+   "emoji": "🥪"
+  },
+  {
+   "name": "Meat",
+   "emoji": "🥩"
+  },
+  {
+   "name": "Mediterranean",
+   "emoji": "🏖️"
+  },
+  {
+   "name": "Mexican",
+   "emoji": "🇲🇽"
+  },
+  {
+   "name": "Middle-Eastern",
+   "emoji": "🧆"
+  },
+  {
+   "name": "Milk",
+   "emoji": "🥛"
+  },
+  {
+   "name": "Moroccan",
+   "emoji": "🇲🇦"
+  },
+  {
+   "name": "Mushrooms",
+   "emoji": "🍄"
+  },
+  {
+   "name": "Mutton",
+   "emoji": "🐑"
+  },
+  {
+   "name": "Nigerian",
+   "emoji": "🇳🇬"
+  },
+  {
+   "name": "Noodles",
+   "emoji": "🍜"
+  },
+  {
+   "name": "Oven",
+   "emoji": "🔥"
+  },
+  {
+   "name": "Palestinian",
+   "emoji": null
+  },
+  {
+   "name": "Pancake",
+   "emoji": "🥞"
+  },
+  {
+   "name": "Pasta",
+   "emoji": "🍝"
+  },
+  {
+   "name": "Pastry",
+   "emoji": "🥐"
+  },
+  {
+   "name": "Pate",
+   "emoji": null
+  },
+  {
+   "name": "Peppers",
+   "emoji": "🌶️"
+  },
+  {
+   "name": "Persian",
+   "emoji": "🇮🇷"
+  },
+  {
+   "name": "Peruvian",
+   "emoji": "🇵🇪"
+  },
+  {
+   "name": "Pie",
+   "emoji": "🥧"
+  },
+  {
+   "name": "Pizza",
+   "emoji": "🍕"
+  },
+  {
+   "name": "Polish",
+   "emoji": "🇵🇱"
+  },
+  {
+   "name": "Pork",
+   "emoji": "🐖"
+  },
+  {
+   "name": "Portuguese",
+   "emoji": "🇵🇹"
+  },
+  {
+   "name": "Potato",
+   "emoji": "🥔"
+  },
+  {
+   "name": "Pub",
+   "emoji": null
+  },
+  {
+   "name": "Quebec",
+   "emoji": "🍁"
+  },
+  {
+   "name": "Quick",
+   "emoji": "🌭"
+  },
+  {
+   "name": "Raw",
+   "emoji": null
+  },
+  {
+   "name": "Rice",
+   "emoji": "🍚"
+  },
+  {
+   "name": "Roast",
+   "emoji": "🍖"
+  },
+  {
+   "name": "Romanian",
+   "emoji": "🇷🇴"
+  },
+  {
+   "name": "Russian",
+   "emoji": "🇷🇺"
+  },
+  {
+   "name": "Salad",
+   "emoji": "🥗"
+  },
+  {
+   "name": "Sandwich",
+   "emoji": "🥪"
+  },
+  {
+   "name": "Sauce",
+   "emoji": "🍲"
+  },
+  {
+   "name": "Sausage",
+   "emoji": "🌭"
+  },
+  {
+   "name": "Seafood",
+   "emoji": "🦐"
+  },
+  {
+   "name": "Shaken",
+   "emoji": "🫨"
+  },
+  {
+   "name": "Shrimp",
+   "emoji": "🦐"
+  },
+  {
+   "name": "Side",
+   "emoji": null
+  },
+  {
+   "name": "Slowcooked",
+   "emoji": "⏳"
+  },
+  {
+   "name": "Smoothie",
+   "emoji": "🥤"
+  },
+  {
+   "name": "Snack",
+   "emoji": "🍿"
+  },
+  {
+   "name": "Somali",
+   "emoji": "🇸🇴"
+  },
+  {
+   "name": "Soup",
+   "emoji": "🍲"
+  },
+  {
+   "name": "Sourdough",
+   "emoji": "🍞"
+  },
+  {
+   "name": "Southern",
+   "emoji": null
+  },
+  {
+   "name": "Southwest",
+   "emoji": null
+  },
+  {
+   "name": "Spanish",
+   "emoji": "🇪🇸"
+  },
+  {
+   "name": "Spice",
+   "emoji": "🌶️"
+  },
+  {
+   "name": "Spicy",
+   "emoji": "🌶️"
+  },
+  {
+   "name": "Spinach",
+   "emoji": "🍃"
+  },
+  {
+   "name": "Spread",
+   "emoji": null
+  },
+  {
+   "name": "Squash",
+   "emoji": null
+  },
+  {
+   "name": "Steak",
+   "emoji": "🥩"
+  },
+  {
+   "name": "Stew",
+   "emoji": "🍲"
+  },
+  {
+   "name": "Stirred",
+   "emoji": "🥄"
+  },
+  {
+   "name": "Stock",
+   "emoji": "🍲"
+  },
+  {
+   "name": "Supper",
+   "emoji": "🍽️"
+  },
+  {
+   "name": "Swedish",
+   "emoji": "🇸🇪"
+  },
+  {
+   "name": "Sweet",
+   "emoji": "🍬"
+  },
+  {
+   "name": "Swiss",
+   "emoji": "🇨🇭"
+  },
+  {
+   "name": "Syrup",
+   "emoji": "🍯"
+  },
+  {
+   "name": "Thai",
+   "emoji": "🇹🇭"
+  },
+  {
+   "name": "Tofu",
+   "emoji": "🥢"
+  },
+  {
+   "name": "Tomato",
+   "emoji": "🍅"
+  },
+  {
+   "name": "Tortilla",
+   "emoji": "🌮"
+  },
+  {
+   "name": "Traditional",
+   "emoji": null
+  },
+  {
+   "name": "Traybake",
+   "emoji": null
+  },
+  {
+   "name": "Tuna",
+   "emoji": "🐟"
+  },
+  {
+   "name": "Tunisian",
+   "emoji": "🇹🇳"
+  },
+  {
+   "name": "Turkey",
+   "emoji": "🦃"
+  },
+  {
+   "name": "Turkish",
+   "emoji": "🇹🇷"
+  },
+  {
+   "name": "Ukrainian",
+   "emoji": "🇺🇦"
+  },
+  {
+   "name": "Uzbek",
+   "emoji": "🇺🇿"
+  },
+  {
+   "name": "Veal",
+   "emoji": "🐄"
+  },
+  {
+   "name": "Vegetables",
+   "emoji": "🥦"
+  },
+  {
+   "name": "Vegan",
+   "emoji": "🌱"
+  },
+  {
+   "name": "Raw Vegan",
+   "emoji": null
+  },
+  {
+   "name": "Vietnamese",
+   "emoji": "🇻🇳"
+  },
+  {
+   "name": "Wholemeal",
+   "emoji": null
+  },
+  {
+   "name": "Wine",
+   "emoji": "🍷"
+  },
+  {
+   "name": "Yucatecan",
+   "emoji": "🇲🇽"
+  },
+  {
+   "name": "Healthy",
+   "emoji": "🍏"
+  },
+  {
+   "name": "Gluten Free",
+   "emoji": "🥗"
+  }
+ ]
+}
