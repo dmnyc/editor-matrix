@@ -10,7 +10,7 @@ does. This repository is that expectation, as cases a machine can run.
 
 It is used by:
 
-- **Sidecar**: the note composers (full-size tab and side panel), in Chrome and Firefox.
+- **[Sidecar](https://github.com/dmnyc/sidecar)**: the note composers (full-size tab and side panel), in Chrome and Firefox.
 - **Zap Cooking**: web ([zapcooking/frontend](https://github.com/zapcooking/frontend)),
   iOS ([zapcooking/zapcooking_ios](https://github.com/zapcooking/zapcooking_ios)) and
   Android ([zapcooking/zap_cooking_android](https://github.com/zapcooking/zap_cooking_android)):
