@@ -70,6 +70,17 @@ pills, attachment offers) belongs in that app's own tests. See
 [docs/writing-an-adapter.md](docs/writing-an-adapter.md) for the step vocabulary and for
 adding an app, including native runners.
 
+## The editor lab
+
+[lab/](lab/README.md) checks what a composer signs rather than what it holds: it drives an app
+through every feature against a local relay and Blossom server of its own, checks each signed
+event against the NIPs and the recipe fixtures, and writes down every event it signed.
+
+## Findings the cases cannot run
+
+[docs/composer-findings.md](docs/composer-findings.md) lists what a case cannot check, such as where the caret is
+drawn or what a reply publishes, with the rule each one needs and its state in each app.
+
 ## Recipe composers
 
 The four apps that publish Zap Cooking recipes keep their recipe composers in step through
