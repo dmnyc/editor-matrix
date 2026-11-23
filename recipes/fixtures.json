@@ -1,5 +1,5 @@
 {
-  "about": "What a recipe composer publishes for given form fields: kind, tags and content, exactly. Generated from Sidecar's longform-events.js (recipeTemplate), which writes Zap Cooking's createMarkdown format. created_at and published_at are fixed at 1700000000; app-specific tags (client, imeta) are left out. Each app's recipe builder must produce these. Tags follow the tag rule in README.md (lowercase, spaces to hyphens, only letters, marks, digits and hyphens of any script); the d tag keeps its own rule, so an edit lands where the recipe already is.",
+  "about": "What a recipe composer publishes for given form fields: kind, tags and content, exactly. Generated from Sidecar's longform-events.js (recipeTemplate), which writes Zap Cooking's createMarkdown format. created_at and published_at are fixed at 1700000000; app-specific tags (client, imeta) are left out. Each app's recipe builder must produce these. Tags follow the tag rule in README.md (lowercase, spaces to hyphens, only letters, marks, digits and hyphens of any script); a new recipe's d tag is its title by the same rule, and the title tag is zapcooking- plus the d tag; an edit keeps the d tag the recipe already has.",
   "cases": [
     {
       "name": "every field",
@@ -236,7 +236,7 @@
         "tags": [
           [
             "d",
-            "za’atar-&-mac-take-2!"
+            "zaatar-mac-take-2"
           ],
           [
             "title",
