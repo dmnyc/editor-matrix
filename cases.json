@@ -1182,6 +1182,45 @@
   "text": "abc‸"
  },
  {
+  "id": "sel-all-right-enter",
+  "group": "select",
+  "steps": [
+   [
+    "type",
+    "ab"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "cd"
+   ],
+   [
+    "selectAll"
+   ],
+   [
+    "move",
+    "right"
+   ],
+   [
+    "key",
+    "Enter"
+   ],
+   [
+    "type",
+    "x"
+   ]
+  ],
+  "text": "ab\n\ncd\nx‸",
+  "why": "the caret after Select All and Right is on the last line, not between lines"
+ },
+ {
   "id": "sel-all-left",
   "group": "select",
   "steps": [
@@ -2539,6 +2578,42 @@
   ],
   "text": "only html‸",
   "why": "some apps put only HTML on the clipboard"
+ },
+ {
+  "id": "rich-html-only-paragraphs",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "html": "<p>one</p><p>two</p>"
+    }
+   ]
+  ],
+  "text": "one\n\ntwo‸",
+  "why": "two paragraphs are two paragraphs: a blank line between them, as the browser's own plain text of them reads"
+ },
+ {
+  "id": "rich-html-only-line-break",
+  "group": "rich",
+  "needs": [
+   "paste"
+  ],
+  "clean": true,
+  "steps": [
+   [
+    "paste",
+    {
+     "html": "<p>one<br>two</p>"
+    }
+   ]
+  ],
+  "text": "one\ntwo‸",
+  "why": "a line break inside a paragraph is one line break, not a paragraph"
  },
  {
   "id": "rich-mid-line",

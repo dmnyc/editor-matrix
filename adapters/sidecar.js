@@ -5,6 +5,8 @@
 //
 //   surface  'compose'  the full-size composer tab (compose.html)
 //            'panel'    the composer sheet in the side panel
+//            'bare'     the shared editor with no attachment or quote hooks, as the page-comment
+//                       box and stream chat use it (built in the side panel)
 //            'control'  a bare contenteditable added to compose.html: no Sidecar code on it,
 //                       so its failures are the browser's own
 //   browser  'chrome' | 'firefox'
@@ -26,10 +28,11 @@ async function startSidecar({ root = process.env.SIDECAR_ROOT, browser = 'chrome
 }
 
 async function sidecarAdapter(x, { surface = 'compose', browser = 'chrome' } = {}) {
-  const page = surface === 'panel' ? 'sidepanel' : 'compose';
+  const page = surface === 'panel' || surface === 'bare' ? 'sidepanel' : 'compose';
   const tab = await x.openPage(`chrome-extension://${x.extId}/${page}.html`);
   Object.assign(tab, browser === 'firefox' ? firefoxAbilities(tab) : chromeAbilities(tab));
-  const ED = surface === 'panel' ? '#modal .compose-editor' : surface === 'control' ? '#__control' : '.compose-editor';
+  const ED = surface === 'panel' ? '#modal .compose-editor' : surface === 'control' ? '#__control'
+    : surface === 'bare' ? '#__bare .compose-editor' : '.compose-editor';
   if (surface === 'panel') {
     await tab.viewport({ width: 380, height: 820, scale: 1 });
     for (let i = 0; i < 40 && !(await tab.evaluate(`!!document.getElementById('compose-fab')`)); i++) await sleep(250);
@@ -39,6 +42,14 @@ async function sidecarAdapter(x, { surface = 'compose', browser = 'chrome' } = {
     // A draft left by an earlier surface is offered back first; these cases start fresh.
     await tab.evaluate(`(() => { const b = [...document.querySelectorAll('#modal button')].find((b) => b.textContent.trim() === 'Start fresh'); if (b) b.click(); })()`);
     await sleep(600);
+  }
+  if (surface === 'bare') {
+    await tab.viewport({ width: 380, height: 820, scale: 1 });
+    for (let i = 0; i < 40 && !(await tab.evaluate(`!!(window.SidecarStreamChatAccount && window.SidecarStreamChatAccount.createMentionEditor)`)); i++) await sleep(250);
+    await tab.evaluate(`(() => { const box = document.createElement('div'); box.id = '__bare';
+      box.style.cssText = 'position:fixed;left:10px;top:10px;width:340px;z-index:99999;background:#fff';
+      const ed = window.SidecarStreamChatAccount.createMentionEditor({ placeholder: 'Write a comment' });
+      box.append(ed.wrap); document.body.appendChild(box); })()`);
   }
   for (let i = 0; i < 60 && !(await tab.evaluate(`!!document.querySelector('.compose-editor') && !document.documentElement.classList.contains('compose-booting')`)); i++) await sleep(250);
   if (!(await tab.evaluate(`!!document.querySelector('${ED.replace('#__control', '.compose-editor')}')`))) {
@@ -74,6 +85,7 @@ async function sidecarAdapter(x, { surface = 'compose', browser = 'chrome' } = {
       return { text, empty: control ? !text : ed.classList.contains('is-empty'), focused: document.activeElement === ed,
         formatting: __formattingIn(ed, '[data-bech32]') }; })()`),
     errors: async () => errorsAt(),
+    page: tab, // the driver's page, for probes beyond the case steps
     close: () => tab.close(),
   };
 }

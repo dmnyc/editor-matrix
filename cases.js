@@ -111,6 +111,7 @@ const CASES = [
   { id: 'sel-down', group: 'select', steps: [...lines('ab', 'cd'), M('docStart'), S('down'), T('X')], text: 'X‸cd' },
   { id: 'sel-shrink', group: 'select', steps: [T('abc'), M('docStart'), S('right'), S('right'), S('left'), T('X')], text: 'X‸bc' },
   { id: 'sel-all-right', group: 'select', steps: [T('abc'), A, M('right')], text: 'abc‸' },
+  { id: 'sel-all-right-enter', group: 'select', steps: [...lines('ab', '', 'cd'), A, M('right'), K('Enter'), T('x')], text: 'ab\n\ncd\nx‸', why: 'the caret after Select All and Right is on the last line, not between lines' },
   { id: 'sel-all-left', group: 'select', steps: [T('abc'), A, M('left')], text: '‸abc' },
   { id: 'sel-all-backspace', group: 'select', steps: [T('hello'), A, K('Backspace')], text: '‸', empty: true },
   { id: 'sel-all-multiline-delete', group: 'select', steps: [...lines('ab', '', 'cd'), A, K('Delete')], text: '‸', empty: true },
@@ -182,6 +183,8 @@ const CASES = [
   { id: 'rich-docs', group: 'rich', needs: ['paste'], clean: true, why: 'what a word processor puts on the clipboard',
     steps: [P('from a doc', '<meta charset="utf-8"><b style="font-weight:normal;" id="docs-internal-guid-1"><span style="font-size:11pt;font-family:Arial;color:#000000;background-color:transparent;font-weight:700;">from a doc</span></b>')], text: 'from a doc‸' },
   { id: 'rich-html-only', group: 'rich', needs: ['paste'], clean: true, steps: [P(undefined, '<b>only html</b>')], text: 'only html‸', why: 'some apps put only HTML on the clipboard' },
+  { id: 'rich-html-only-paragraphs', group: 'rich', needs: ['paste'], clean: true, steps: [P(undefined, '<p>one</p><p>two</p>')], text: 'one\n\ntwo‸', why: 'two paragraphs are two paragraphs: a blank line between them, as the browser\'s own plain text of them reads' },
+  { id: 'rich-html-only-line-break', group: 'rich', needs: ['paste'], clean: true, steps: [P(undefined, '<p>one<br>two</p>')], text: 'one\ntwo‸', why: 'a line break inside a paragraph is one line break, not a paragraph' },
   { id: 'rich-mid-line', group: 'rich', needs: ['paste'], clean: true, steps: [T('ac'), M('left'), P('b', '<strong style="color:blue">b</strong>'), T('!')], text: 'ab!‸c', why: 'text typed after a rich paste is not bold or blue either' },
   { id: 'rich-script', group: 'rich', needs: ['paste'], clean: true, steps: [P('safe', '<img src=x onerror="window.__pwned=1"><span>safe</span>')], text: 'safe‸' },
 
