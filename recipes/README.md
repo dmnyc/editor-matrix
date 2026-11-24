@@ -74,7 +74,7 @@ already published with a colon in their title.
 | Preview: the recipe drawn from what will be published | ✅ | ❌ | ❌ | ❌ |
 | Publishing goes through a review: the form's button says Review and shows the whole recipe, then Publish or Back to editor (no timer, whatever the account's countdown setting); the replace question comes after Publish | ✅ | ? | ? | ? |
 | Edit a list item in place (Enter or leaving keeps it, Escape takes it back, emptied keeps the old text) | ✅ | ✅ | ◐ rows are fields | ◐ rows are fields |
-| Reorder list items by dragging | ◐ Move up only | ✅ | ❌ | ❌ |
+| Reorder list items by dragging, by a grip at the row's start: dropped on a row's top half it lands before it, on the bottom half after it, with a line where it will land | ✅ also Move up, and the grip's arrow keys | ✅ | ❌ | ❌ |
 | A pasted list becomes items, bullets and numbers taken off ("1.5 tsp" and "350:" left alone) | ✅ | ? | ❌ | ❌ |
 | Categories suggested from `categories.json`: by season before typing, matches as you type | ✅ | ? | ❌ free text | ❌ free text |
 | Each category shown with its emoji | ✅ | ◐ 141 of 162 | ❌ | ❌ |
